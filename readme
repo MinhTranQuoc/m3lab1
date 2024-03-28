@@ -1,0 +1,5 @@
+if (!formData.securityQuestion) {
+validationErrors.securityQuestion = "securityQuestion is required";
+} else if (!REGEX.securityQuestion.test(formData.securityQuestion)) {
+validationErrors.securityQuestion = "securityQuestion is invalid";
+}
